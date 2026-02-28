@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThermoCharge | Seu calor, sua energia</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Thermo<strong>Charge</strong></div>
+  <nav class="nav-links">
+    <a href="#home">Início</a>
+    <a href="#produto">Produto</a>
+    <a href="tecnologia.html">Nova tecnologia</a>
+    <a href="#comf">Como funciona</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div class="nav-actions">
+   <button class="btn-login" onclick="openLogin()">
+        <img src="https://img.icons8.com/?size10&id=26211&format=png&color=000000" alt="Login" class="icon-login">
+        Login
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="tagline">Energia Termoelétrica</span>
+    <h1>ThermoCharge – Seu calor, sua energia.</h1>
+    <p>A primeira capa que transforma o calor das suas mãos em carga real.</p>
+    <a href="#produto">
+ <button class="btn-primary" onclick="scrollToProduct()">Comprar Agora</button>
+</a>
+  </div>
+  <div class="hero-image"> 
+    <img src="img/Design sem nome.png" alt="inicio">    
+  </div>
+</section>
+
+<section class="info-split">
+  <div class="split-card highlight">
+    <h2>O Problema</h2>
+    <p>Seu celular sempre descarrega nos momentos mais importantes.</p>
+  </div>
+  <div class="split-card highlight">
+    <h2>A Solução</h2>
+    <p>A energia que você precisa já está na sua mão através de placas termoelétricas finas.</p>
+  </div>
+</section>
+
+<section id="produto" class="product-config">
+  <div class="config-grid">
+    <div class="product-view">
+      <img src="img/produto2.png" alt="inicio" class="placeholder-img-large">
+     
+    </div>
+
+    <div class="config-details">
+      <h2>Personalize sua Capa</h2>
+      <p class="price">R$ <span id="price">299</span></p>
+
+      <div class="selection-group">
+        <label>Marca:</label>
+        <select id="brand">
+          <option>Samsung</option>
+          <option>Apple</option>
+          <option>Xiaomi</option>
+          <option>Motorola</option>
+          <option>Nokia</option>
+          <option>LG</option>
+        </select>
+      </div>
+
+      <div class="selection-group">
+        <label>Modelo:</label>
+        <select id="model">
+          <option value="padrao">Padrão</option>
+          <option value="premium">Premium (+ R$ 50)</option>
+        </select>
+      </div>
+
+      <div class="selection-group">
+        <label>Cor:</label>
+        <div class="color-options">
+          <select id="color">
+            <option>Preto Carbono</option>
+            <option>Azul Galáxia</option>
+            <option>Verde Sustentável</option>
+            
+          </select>
+        </div>
+      </div>
+
+      <button class="btn-buy-now" onclick="addToCart()">Adicionar ao Carrinho</button>
+    </div>
+  </div>
+</section>
+
+<section class="cart-section">
+  <div class="container">
+    <h2>Seu Carrinho</h2>
+    <div id="cart-items" class="cart-grid"></div>
+    <div class="cart-total">
+      <h3>Total: R$ <span id="total">0</span></h3>
+
+<button class="btn-primary" onclick="finalizarCompra()">Comprar</button>
+    </div>
+  </div>
+</section>
+
+<section id="comf" class="como">
+    <h1>⚙ Como funcionaria?</h1>
+
+    <p>
+        A ThermoCharge utilizaria uma tecnologia chamada 
+        <strong>efeito termoelétrico</strong>, um princípio científico já existente,
+        capaz de transformar diferenças de temperatura em energia elétrica.
+    </p>
+
+    <div class="tech-explicacao">
+
+        <div class="passo">
+            🔹 <strong>Temperatura do corpo:</strong><br>
+            O corpo humano mantém em média 36°C, gerando calor constantemente.
+        </div>
+
+        <div class="passo">
+            🔹 <strong>Temperatura do ambiente:</strong><br>
+            O ambiente geralmente é mais frio que o corpo.
+        </div>
+
+        <div class="passo">
+            🔹 <strong>Geração de energia:</strong><br>
+            A diferença entre essas temperaturas cria microcorrentes elétricas.
+        </div>
+
+        <div class="passo">
+            🔹 <strong>Armazenamento:</strong><br>
+             A capa utiliza placas termoelétricas ultrafinas que capturam o calor natural
+            da sua mão e transformam essa diferença de temperatura em energia elétrica.
+        </div>
+
+        <div class="passo">
+            🔹 <strong>Uso contínuo:</strong><br>
+            Enquanto você estiver usando o celular, a capa continuará gerando energia.
+        </div>
+
+         <div class="passo">
+            🔹 <strong> Quanto carregaria?</strong><br>
+            Quando a bateria do celular estiver baixa, a capa envia energia automaticamente,
+            ajudando a prolongar o uso do aparelho sem precisar de cabos. Não seria para carregar 100%.
+          
+        </div>
+
+    </div>
+</section>
+<div class="v2">
+<img src="img/img.png" alt="Logotipo" >
+</div>
+
+<section id="contato" class="contact-section">
+  <h2>Fale Conosco</h2>
+  <p>
+  Siga nosso Instagram:
+ <a href="https://www.instagram.com/tmcharge/" target="_blank" class="btn-instagram">
+  <img src="https://img.icons8.com/?size=26&id=32323&format=png&color=000000" alt="icons8">
+</a>
+</p>
+  <form id="contact-form">
+    <input type="text" placeholder="Nome" required>
+    <input type="email" placeholder="E-mail" required>
+    <textarea placeholder="Como podemos ajudar?" rows="5"></textarea>
+    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+  </form>
+
+</section>
+
+<footer>
+  <div class="footer-content">
+    <p>ThermoCharge © 2026. Tecnologia Sustentável - Desevolvedora Ana Carolina</p>
+  </div>
+</footer>
+
+<div class="modal" id="loginModal">
+  <div class="modal-content">
+    <h2>Acessar Conta</h2>
+    <input type="email" id="loginEmail" placeholder="E-mail">
+    <input type="password" id="loginPassword" placeholder="Senha">
+    <button class="btn-primary" onclick="login()">Entrar</button>
+    <button class="btn-primary" onclick="closeLogin()">Cancelar</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
